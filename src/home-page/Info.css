@@ -1,0 +1,18 @@
+.flexCon{
+    display: flex;
+    padding: 10px;
+}
+.col{
+    flex: 1;
+    text-align: center;
+    color: white;
+    margin: 15px;
+    text-shadow: 1px 1px 3px black;
+}
+.col ul{
+    list-style-type: none;
+}
+img{
+    -webkit-filter: drop-shadow(3px 3px 5px rgb(175, 160, 160));
+    filter: drop-shadow(3px 3px 5px rgb(175, 160, 160));
+}

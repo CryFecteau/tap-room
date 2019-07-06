@@ -1,13 +1,17 @@
 import React from 'react';
-import './HeaderAnNav.css';
 import banner from '../img/banner.png';
 import logo from '../img/logo.png';
+import NavBar from './NavBar';
+import './HeaderAnNav.css';
 
 function Header(){
     return (
         <div>
-            <img className="banner" src={banner}/>
-            <img className="logo" src={logo}/>
+            <div>
+                <img className="banner" src={banner}/>
+                <img className="logo" src={logo}/>
+            </div>
+            <NavBar/>
         </div>
     )
 }

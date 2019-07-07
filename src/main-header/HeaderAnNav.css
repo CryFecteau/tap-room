@@ -1,5 +1,5 @@
 .banner{
-    width: 100%;
+    width: 101%;
     height: 35vh;
     position: relative;
     z-index: -1;
@@ -33,3 +33,4 @@
     padding-right: 7em;
     background-color: rgb(79, 112, 80);
 }
+

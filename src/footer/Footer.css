@@ -1,0 +1,44 @@
+.footerFlex{
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+    text-shadow: 1px 2px 3px rgb(90, 88, 88);
+    font-weight: bolder;
+}
+.footerBox h2{
+    color: rgb(25, 102, 66);
+    text-shadow: 3px 6px 3px rgba(0, 0, 0, 0.4); 
+    font-size: 1.5em;
+}
+.footerBox p{
+    margin-top: -10px;
+    color: rgb(68, 14, 14);
+    font-size: 1.1em;
+}
+.footerBox{
+    box-shadow: 3px 3px 10px black;
+    background-color: rgb(46, 45, 45);
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.colFoot{
+    flex: 1;
+    padding: 20px;
+}
+.colFoot img{
+    height: 60px;
+    white-space: 30px;
+    margin: 10px;
+}
+#youTube{
+    height: 75px;
+    transform: translateY(7px);
+    z-index: 1;
+}
+#logo{
+    height: 400px;
+    z-index: 1;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari 3-8 */
+    transform: rotate(10deg);
+}

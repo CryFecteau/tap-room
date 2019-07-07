@@ -8,6 +8,9 @@
     color: white;
     margin: 15px;
     text-shadow: 1px 1px 3px black;
+    background: rgb(181,23,21);
+    background: linear-gradient(0deg, rgba(181,23,21,0.0984768907563025) 25%, rgba(167,23,21,0.6054796918767507) 37%, rgba(89,23,23,0.7987570028011204) 60%, rgba(83,19,19,0.6951155462184874) 69%, rgba(57,1,1,0.9304096638655462) 85%, rgba(91,0,0,1) 100%);
+    box-shadow: 3px 3px 10px black;
 }
 .col ul{
     list-style-type: none;

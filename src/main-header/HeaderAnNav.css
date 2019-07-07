@@ -17,10 +17,11 @@
 }
 .navPostion a{
     text-decoration: none;
-    color: rgb(46, 192, 124);
+    -webkit-text-stroke: 1px black;
+    color: rgb(44, 172, 112);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 3px 6px 3px rgba(0, 0, 0, 0.4); 
     font-size: 2em;
 }
 .navPostion{

@@ -23,7 +23,7 @@ function Info(){
             </div>
             <div className="col">
                 <hr/>
-                <h3>Hungery?</h3>
+                <h3>Hungry?</h3>
                 <img src={Hand}/>
                 <p>Our chefs use the freshest ingerdients to make new dishes each day, come on in and see whats on new on our menu.</p>
             </div>

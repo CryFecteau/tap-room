@@ -12,8 +12,9 @@
 }
 .footerBox p{
     margin-top: -10px;
-    color: rgb(68, 14, 14);
+    color: rgb(39, 10, 10);
     font-size: 1.1em;
+    font-weight: bolder;
 }
 .footerBox{
     box-shadow: 3px 3px 10px black;

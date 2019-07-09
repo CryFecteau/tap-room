@@ -1,0 +1,77 @@
+.cal-warp{
+        height: 800px;
+        position: relative;
+        width: 800px;
+        margin: 0 auto;
+        box-shadow: 3px 3px 10px black;
+}
+.cal-item{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        /* padding:5px 10px; */
+        opacity:0;
+        transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+        border: solid white;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 12px;
+  }
+  
+  .arrow-prev{
+        left:-30px;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+        right:-30px;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%) rotate(-45deg);
+    }
+    @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+    [id^='item']{
+        display: none;
+    }
+    .item1 {
+        z-index: 2;
+        opacity: 1;
+        background:url('../img/comeIn.png');
+        background-size:cover;
+        background-color: rgba(66, 64, 64, 0.842);
+      }
+    .item2{
+        background:url('../img/drunkDrink.png');
+        background-size:cover;
+        background-color: rgba(66, 64, 64, 0.842);
+    }
+    .item3{
+        background:url('../img/happyHour.png');
+        background-size:cover;
+        background-color: rgba(66, 64, 64, 0.842);
+    }
+    
+    *:target ~ .item1 {
+        opacity: 0;
+      }
+    
+    #item1:target ~ .item1 {
+        opacity: 1;
+      }
+    
+    #item2:target ~ .item2, #item3:target ~ .item3 {
+        z-index: 3;
+        opacity: 1;
+      }
+    

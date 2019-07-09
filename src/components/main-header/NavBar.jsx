@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./HeaderAnNav.css"
+import "./HeaderAnNav.css";
 
 function NavBar() {
     return(

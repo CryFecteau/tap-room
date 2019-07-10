@@ -13,7 +13,7 @@ function Info(){
                 <div className="col">
                     <hr/>
                     <h3>Our Hours</h3>
-                    <img src={Open}/>
+                    <img src={Open} alt=""/>
                     <ul>
                         <li>Monday 10am - 11pm</li>
                         <li>Tuesday 10am - 11pm</li>
@@ -27,13 +27,13 @@ function Info(){
                 <div className="col">
                     <hr/>
                     <h3>Hungry?</h3>
-                    <img src={Hand}/>
+                    <img src={Hand} alt=""/>
                     <p>Our chefs use the freshest ingerdients to make new dishes each day, come on in and see whats on new on our menu.</p>
                 </div>
                 <div className="col">
                     <hr/>
                     <h3>Take The Fun Home</h3>
-                    <img src={Beer}/>
+                    <img src={Beer} alt=""/>
                     <p>Why not share your experience and take our exclusive custom bottles home or to your next event.</p>
                 </div>
 

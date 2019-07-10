@@ -20,12 +20,12 @@ function Footer(){
                 </div>
                 <div className="colFoot">
                     <h2>Stay Connected</h2>
-                    <img src={Facebook}/>
-                    <img src={Instagram}/>
-                    <img id="youTube" src={YouTube}/>
+                    <img src={Facebook} alt=""/>
+                    <img src={Instagram} alt=""/>
+                    <img id="youTube" src={YouTube} alt=""/>
                 </div>
                 <div className="colFoot">
-                    <img id="logo" src={Logo}/>
+                    <img id="logo" src={Logo} alt=""/>
                 </div>
             </div>
         </div>

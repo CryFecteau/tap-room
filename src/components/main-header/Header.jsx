@@ -8,8 +8,8 @@ function Header(){
     return (
         <div>
             <div>
-                <img className="banner" src={banner}/>
-                <img className="logo" src={logo}/>
+                <img className="banner" src={banner} alt=""/>
+                <img className="logo" src={logo} alt=""/>
             </div>
             <NavBar/>
         </div>

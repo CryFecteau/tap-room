@@ -10,7 +10,6 @@ function Taps(props){
         </div>
     );
 }
-// GET BEER STYLE TO DISPLAY!
 Taps.propType={
     name: PropTypes.string.isRequired,
     style: PropTypes.string.isRequired,

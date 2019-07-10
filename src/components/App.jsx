@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './main-header/Header';
 import Info from './home-page/Info';
-import Taps from './taps-page/Taps';
+import TapList from './taps-page/TapList';
 import AboutUs from './about-us/AboutUs';
 import Footer from './footer/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Header/>
         <Route exact path="/" component={Info}/>
-        <Route path="/taps" component={Taps}/>
+        <Route path="/tapList" component={TapList}/>
         <Route path="/about" component={AboutUs}/>
       </Router> 
       <Footer/>

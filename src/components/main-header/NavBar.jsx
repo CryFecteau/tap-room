@@ -6,7 +6,7 @@ function NavBar() {
     return(
         <div className="navPostion">
             <Link to="/">Home</Link>
-            <Link to="/taps">Beers on Tap</Link>
+            <Link to="/tapList">Beers on Tap</Link>
             <Link to="/about">About Us</Link>
         </div>
     )

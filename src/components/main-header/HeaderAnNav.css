@@ -8,8 +8,8 @@
     position: absolute;
     top: 20%;
     left: 50%;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     margin-top: -220px; /* Half the height */
     margin-left: -200px;
     -webkit-filter: drop-shadow(5px 5px 5px rgb(175, 160, 160));

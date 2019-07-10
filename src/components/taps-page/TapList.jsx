@@ -1,35 +1,38 @@
 import React from 'react';
 import Taps from './Taps';
+import PropTypes from 'prop-types';
 
-var masterTapList = [
-    {
-        name: "Reaper",
-        type: "Stout",
-        percent: "8%"
-    },
-    {
-        name: "Brain Tumor",
-        type: "Borwn Pale Ale",
-        percent: "5%"
-    },
-    {
-        name: "Sickly",
-        type: "IPA",
-        percent: "6.5%"
-    },
-]
-function TapList(){
+// var masterTapList = [
+//     {
+//         name: "Reaper",
+//         type: "Stout",
+//         percent: "8%"
+//     },
+//     {
+//         name: "Brain Tumor",
+//         type: "Borwn Pale Ale",
+//         percent: "5%"
+//     },
+//     {
+//         name: "Sickly",
+//         type: "IPA",
+//         percent: "6.5%"
+//     },
+// ]
+function TapList(props){
     return(
         <div>
-            {masterTapList.map((taps, index)=>
+            {props.tapList.map((taps, index)=>
                 <Taps 
                 name={taps.name}
-                type={taps.type}
+                style={taps.style}
                 percent={taps.percent} 
                 key={index} />
             )}
         </div>
     );
 }
-
+TapList.prototype = {
+    tapList: PropTypes.array
+};
 export default TapList;

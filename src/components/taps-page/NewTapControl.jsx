@@ -1,25 +1,35 @@
 import React from 'react';
+import EmployeeAuth from './EmployeeAuth';
+import NewTapForm from './NewTapForm';
+import PropTypes from 'prop-types';
 
 class NewTapControl extends React.Component{
-
 constructor(props) {
     super(props);
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    
+    this.handleTroubleshootingAuth = this.handleTroubleshootingAuth.bind(this);
   }
-handleClick(){
+handleTroubleshootingAuth(){
     this.setState({formVisibleOnPage: true});
-    console.log('set to:' + this.state.formVisibleOnPage);
 }
   render(){
+    let currentlyVisibleContent = null;
+    if (this.state.formVisibleOnPage){
+      currentlyVisibleContent = <NewTapForm onNewTapCreation={this.props.onNewTapCreation}/>;
+    } else {
+      currentlyVisibleContent = <EmployeeAuth onTroubleshootingAuth={this.handleTroubleshootingAuth}/>;
+    }
     return (
       <div>
-        <strong onClick={this.handleClick}>Click This</strong>
+          {currentlyVisibleContent}
       </div>
     );
   }
 }
-
+NewTapControl.propTypes = {
+    onNewTapCreation: PropTypes.func
+};
 export default NewTapControl;

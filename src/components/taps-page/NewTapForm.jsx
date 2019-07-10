@@ -1,16 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewTapForm(){
+function NewTapForm(props){
+    let _name = null;
+    let _style = null;
+    let _percent = null;
+    function handleNewTapFormSubmission(event){
+        event.preventDefault();
+        props.onNewTapCreation({name: _name.value, style: _style.vaule, percent: _percent.value});
+        _name.value = '';
+        _style.value = '';
+        _percent.value = '';
+    }
     return (
         <div>
-            <form>
-                <input type='text' id='name' placeholder='Beer Name'/>
-                <input type='text' id='type' placeholder='Beer Type'/>
-                <input type='text' id='percent' placeholder='Alcohol Percent'/>
+            <form onSubmit={handleNewTapFormSubmission}>
+                <input type='text' id='name' placeholder='Beer Name' ref={(input) => {_name = input;}}/>
+                <input type='text' id='style' placeholder='Beer Style' ref={(input) => {_style = input;}}/>/>
+                <input type='text' id='percent' placeholder='Alcohol Content' ref={(input) => {_percent = input;}}/>/>
                 <button type='submit'>Enter</button>
             </form>
         </div>
     );
 }
-
+NewTapForm.propTypes = {
+    onNewTapCreation: PropTypes.func
+};
 export default NewTapForm;

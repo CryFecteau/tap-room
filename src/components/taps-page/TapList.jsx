@@ -22,12 +22,13 @@ import PropTypes from 'prop-types';
 function TapList(props){
     return(
         <div>
-            {props.tapList.map((taps, index)=>
+            {props.tapList.map((taps)=>
                 <Taps 
                 name={taps.name}
                 style={taps.style}
                 percent={taps.percent} 
-                key={index} />
+                formattedWaitTime={taps.formattedWaitTime}
+                key={taps.id} />
             )}
         </div>
     );

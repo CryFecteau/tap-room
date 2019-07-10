@@ -5,6 +5,7 @@ import TapList from './taps-page/TapList';
 import AboutUs from './about-us/AboutUs';
 import Footer from './footer/Footer';
 import NewTap from './taps-page/NewTapControl';
+import Moment from 'moment';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
@@ -16,8 +17,27 @@ class App extends React.Component {
     };
     this.handleAddingNewTapToList = this.handleAddingNewTapToList.bind(this);
   }
+  componentDidMount() {
+    this.waitTimeUpdateTimer = setInterval(() =>
+      this.updateTapElapsedWaitTime(),
+    50000
+    );
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.waitTimeUpdateTimer);
+  }
+
+  updateTapElapsedWaitTime() {
+    let newMasterTapList = this.state.masterTapList.slice();
+    newMasterTapList.forEach((tap) =>
+      tap.formattedWaitTime = (tap.timeOpen).fromNow(true)
+    );
+    this.setState({masterTapList: newMasterTapList});
+  }
   handleAddingNewTapToList(newTap){
     var newMasterTapList = this.state.masterTapList.slice();
+    newTap.formattedWaitTime = (newTap.timeOpen).fromNow(true)
     newMasterTapList.push(newTap);
     this.setState({masterTapList: newMasterTapList});
   }

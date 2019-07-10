@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Moment from 'moment';
+import {v4} from 'uuid';
 
 function NewTapForm(props){
     let _name = null;
@@ -7,7 +9,7 @@ function NewTapForm(props){
     let _percent = null;
     function handleNewTapFormSubmission(event){
         event.preventDefault();
-        props.onNewTapCreation({name: _name.value, style: _style.vaule, percent: _percent.value});
+        props.onNewTapCreation({name: _name.value, style: _style.vaule, percent: _percent.value, id:v4(), timeOpen: new Moment()});
         _name.value = '';
         _style.value = '';
         _percent.value = '';

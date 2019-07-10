@@ -9,7 +9,6 @@ constructor(props) {
     this.state = {
       formVisibleOnPage: false
     };
-    
     this.handleTroubleshootingAuth = this.handleTroubleshootingAuth.bind(this);
   }
 handleTroubleshootingAuth(){

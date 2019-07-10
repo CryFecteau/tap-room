@@ -5,7 +5,6 @@ import TapList from './taps-page/TapList';
 import AboutUs from './about-us/AboutUs';
 import Footer from './footer/Footer';
 import NewTap from './taps-page/NewTapControl';
-import Moment from 'moment';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
@@ -47,7 +46,7 @@ class App extends React.Component {
         <Router>
           <Header/>
           <Route exact path="/" component={Info}/>
-          <Route path="/tapList" render={()=><TapList tapList={this.state.masterTapList} />} />
+          <Route path="/tapList" render={()=><TapList tapList={this.state.masterTapList}/>} />
           <Route path="/about" component={AboutUs}/>
           <Route path="/createTaps" render={()=><NewTap onNewTapCreation={this.handleAddingNewTapToList}/>}/>
         </Router> 

@@ -5,7 +5,8 @@ function Taps(props){
     return(
         <div>
             <h3>{props.name}</h3>
-            <p>{props.percent} {props.style}</p>
+            <p>{props.percent}</p> 
+            <p>{props.style}</p>
             <p>{props.formattedWaitTime} ago</p>
         </div>
     );

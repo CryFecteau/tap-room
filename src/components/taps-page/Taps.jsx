@@ -16,8 +16,6 @@ function Taps(props){
                 </div>
             </div>
         </div>
-
-       
     );
 }
 Taps.propType={

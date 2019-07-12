@@ -10,7 +10,7 @@ function NewTapForm(props){
     let _percent = null;
     function handleNewTapFormSubmission(event){
         event.preventDefault();
-        props.onNewTapCreation({name: _name.value, style: _style.value, percent: _percent.value, id:v4(), timeOpen: new Moment()});
+        props.onNewTapCreation({name: _name.value, style: _style.value, percent: _percent.value, id: v4(), timeOpen: new Moment()});
         _name.value = '';
         _style.value = '';
         _percent.value = '';

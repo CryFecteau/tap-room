@@ -15,7 +15,6 @@ function AboutUs(){
                         <img id='work' src={Work}/>
                     </div>
                 </div>
-            
             <div className='row'>
                 <div>
                     <img id='head' src={Head}/>

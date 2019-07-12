@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Moment from 'moment';
 import {v4} from 'uuid';
+import Beer from '../img/beer.png';
 
 function NewTapForm(props){
     let _name = null;
@@ -15,13 +16,14 @@ function NewTapForm(props){
         _percent.value = '';
     }
     return (
-        <div>
-            <form onSubmit={handleNewTapFormSubmission}>
-                <input type='text' id='name' placeholder='Beer Name' ref={(input) => {_name = input;}}/>
-                <input type='text' id='style' placeholder='Beer Style' ref={(input) => {_style = input;}}/>/>
-                <input type='text' id='percent' placeholder='Alcohol Content' ref={(input) => {_percent = input;}}/>/>
-                <button type='submit'>Enter</button>
-            </form>
+        <div className="employee">
+            <img src={Beer}/>
+                <form onSubmit={handleNewTapFormSubmission}>
+                    <input type='text' id='name' placeholder='Beer Name' ref={(input) => {_name = input;}}/>
+                    <input type='text' id='style' placeholder='Beer Style' ref={(input) => {_style = input;}}/>
+                    <input type='text' id='percent' placeholder='Alcohol Content' ref={(input) => {_percent = input;}}/>
+                    <button type='submit'>Add</button>
+                </form>
         </div>
     );
 }

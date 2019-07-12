@@ -13,7 +13,7 @@ function TapList(props){
                 <img src={TapBanner}/>
             </div>
             <div>
-                <a href='/createTaps'>Add Taps</a>
+                <a id="addBtn" href='/createTaps'>Add Taps</a>
             </div>
             <div className="tapCon">
                 <div className="colTap">

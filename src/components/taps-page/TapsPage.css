@@ -12,11 +12,22 @@
 }
 .colTap{
     flex: 1;
-    margin: 10px;
+    margin: 15px;
     text-align: center;
     text-shadow: 1px 2px 3px rgb(90, 88, 88);
     font-weight: bolder;
     background: rgb(181,23,21);
     background: linear-gradient(0deg, rgba(181,23,21,0.0984768907563025) 25%, rgba(167,23,21,0.6054796918767507) 37%, rgba(89,23,23,0.7987570028011204) 60%, rgba(83,19,19,0.6951155462184874) 69%, rgba(57,1,1,0.9304096638655462) 85%, rgba(91,0,0,1) 100%);
-    box-shadow: 3px 3px 10px black
+    box-shadow: 3px 3px 10px black;
+}
+#addBtn{
+    text-decoration: none;
+    text-shadow: 1px 2px 3px rgb(90, 88, 88);
+    color:black;
+    background-color: rgba(22, 133, 96, 0.651);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 3px;
+    box-shadow: 3px 3px 10px black;
+    margin: 15px;
 }

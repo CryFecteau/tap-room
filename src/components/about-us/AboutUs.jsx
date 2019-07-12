@@ -24,7 +24,6 @@ function AboutUs(){
                         <h3>Our founder and head zombie has been with the company from the beginning, fine tunning all our recipes.</h3>
                     </div>
                 </div>
-            
             <div className='row'>
                 <div className='column'>
                     <h3>For the being to today, we want to show that zombies are more then what you may think.</h3>

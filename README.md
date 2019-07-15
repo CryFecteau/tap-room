@@ -23,7 +23,7 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### How all components connect to the main index
-![image](.src/components/img/chart.png)
+![image](./src/components/img/chart.png)
 
 ## Known Bugs
 *No know bugs at the moment

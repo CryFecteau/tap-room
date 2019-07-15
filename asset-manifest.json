@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tap-room/static/css/main.a42d61b7.chunk.css",
+    "main.js": "/tap-room/static/js/main.0c6dc60a.chunk.js",
+    "main.js.map": "/tap-room/static/js/main.0c6dc60a.chunk.js.map",
+    "runtime~main.js": "/tap-room/static/js/runtime~main.7960e82e.js",
+    "runtime~main.js.map": "/tap-room/static/js/runtime~main.7960e82e.js.map",
+    "static/js/2.69349977.chunk.js": "/tap-room/static/js/2.69349977.chunk.js",
+    "static/js/2.69349977.chunk.js.map": "/tap-room/static/js/2.69349977.chunk.js.map",
+    "index.html": "/tap-room/index.html",
+    "precache-manifest.24feaac4d6935647aaa5855f868ce33c.js": "/tap-room/precache-manifest.24feaac4d6935647aaa5855f868ce33c.js",
+    "service-worker.js": "/tap-room/service-worker.js",
+    "static/css/main.a42d61b7.chunk.css.map": "/tap-room/static/css/main.a42d61b7.chunk.css.map",
+    "static/media/banner.png": "/tap-room/static/media/banner.571c2702.png",
+    "static/media/comeIn.png": "/tap-room/static/media/comeIn.846063a1.png",
+    "static/media/drunkDrink.png": "/tap-room/static/media/drunkDrink.8a74da78.png",
+    "static/media/happyHour.png": "/tap-room/static/media/happyHour.29e98705.png",
+    "static/media/instagram.png": "/tap-room/static/media/instagram.f048d873.png",
+    "static/media/keg.png": "/tap-room/static/media/keg.57934e1f.png",
+    "static/media/logo.png": "/tap-room/static/media/logo.a993f529.png",
+    "static/media/tap-room.png": "/tap-room/static/media/tap-room.cd7ab710.png",
+    "static/media/work.png": "/tap-room/static/media/work.a19c7a19.png",
+    "static/media/zombie.png": "/tap-room/static/media/zombie.95dc6c9b.png",
+    "static/media/zombit.png": "/tap-room/static/media/zombit.a6c001b0.png"
+  }
+}

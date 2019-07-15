@@ -45,7 +45,7 @@ class App extends React.Component {
       <div>
         <Router>
           <Header/>
-          <Route exact path="/" component={Info}/>
+          <Route exact path="/tap-room" component={Info}/>
           <Route path="/tapList" render={()=><TapList tapList={this.state.masterTapList}/>} />
           <Route path="/about" component={AboutUs}/>
           <Route path="/createTaps" render={()=><NewTap onNewTapCreation={this.handleAddingNewTapToList}/>}/>

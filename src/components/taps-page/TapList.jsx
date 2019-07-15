@@ -40,7 +40,7 @@ function TapList(props){
                 </div>
             </div>
             
-            <div className="taps">
+            <div>
                 {props.tapList.map((taps)=>
                     <Taps 
                     name={taps.name}

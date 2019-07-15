@@ -5,9 +5,10 @@ ZomBit Tavern is a mix of Zombies and 8-bit art. This website displays what Zomb
 #### By Crystal Fecteau
 
 ## Technologies Used
-*React
-*JSX
-*CSS
+
+* React
+* JSX
+* CSS
 
 ## `Set-up/Install`
 
@@ -23,10 +24,10 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### How all components connect to the main index
-![image](.src/components/img/chart.png)
+![image](./src/components/img/chart.png)
 
 ## Known Bugs
-*No know bugs at the moment
+* No know bugs at the moment
 
 ## Support and contact details
 

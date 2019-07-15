@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Taps from './Taps';
 import PropTypes from 'prop-types';
 import TapBanner from '../img/tap-room.png';
@@ -13,7 +14,7 @@ function TapList(props){
                 <img src={TapBanner}/>
             </div>
             <div>
-                <a id="addBtn" href='/createTaps'>Add Taps</a>
+                <Link id="addBtn" to="/createTaps">Add Taps</Link>
             </div>
             <div className="tapCon">
                 <div className="colTap">
